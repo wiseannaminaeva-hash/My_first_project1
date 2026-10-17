@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Анна Минаева</title>
+  <meta name="description" content="Сайт-визитка: контакты и ссылки">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --card: #ffffff;
+      --text: #1d1b19;
+      --muted: #6f6a64;
+      --line: #e6e0d8;
+      --accent: #c2502f;
+      --accent-soft: #f6e4dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161514;
+        --card: #1f1e1c;
+        --text: #f1ede7;
+        --muted: #a39d95;
+        --line: #33302d;
+        --accent: #e8805f;
+        --accent-soft: #3a2a23;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Manrope", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+      line-height: 1.55;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 40px 32px;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 32px;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+    }
+
+    .role {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .about {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 16px;
+    }
+
+    .links {
+      margin-top: 28px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: var(--text);
+      text-decoration: none;
+      transition: border-color .15s, transform .15s;
+      min-width: 0;
+    }
+
+    .links a:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .links svg {
+      flex: none;
+      width: 22px;
+      height: 22px;
+      color: var(--accent);
+    }
+
+    .links span {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .links small {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .links b {
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 420px) {
+      .card { padding: 32px 20px; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar" aria-hidden="true">АМ</div>
+
+    <h1>Анна Минаева</h1>
+    <p class="role">Чем я занимаюсь — допишите сюда</p>
+
+    <p class="about">
+      Пара предложений о себе: что делаете, что умеете, чем можете быть полезны.
+      Этот текст стоит заменить своим.
+    </p>
+
+    <nav class="links">
+      <a href="mailto:wiseannaminaeva@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        <span><small>Почта</small><b>wiseannaminaeva@gmail.com</b></span>
+      </a>
+      <a href="https://github.com/wiseannaminaeva-hash" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        <span><small>GitHub</small><b>wiseannaminaeva-hash</b></span>
+      </a>
+    </nav>
+
+    <footer>© <span id="year">2026</span> Анна Минаева</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
